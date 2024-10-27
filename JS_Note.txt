@@ -1,7 +1,50 @@
                                             JAVASCRIPT
                                             ----------
-OUTPUT
-------
+
+What is Javascript?
+JavaScript is a high-level, interpreted programming language that is used to add interactivity and dynamic behavior to web pages.
+It is one of the core technologies of the World Wide Web and runs on the client side, which means that the code is executed by the
+user's web browser rather than the server. This allows developers to create rich and interactive web applications that can update
+and change the content in real time without the need for a page refresh.
+
+                JavaScript is a versatile language and can be used for a wide range of tasks, such as form validation, creating
+animations and effects, manipulating the Document Object Model (DOM), and making HTTP requests. It can be written in an 
+object-oriented, functional, or procedural style, and has a rich set of libraries and frameworks that can be used to simplify
+and speed up development.
+
+                Javascript is a programming language which runs on browser and with the introduction of node j.s for the first
+time Javascript was able to run outside of the browser world.
+
+JavaScript is not a strongly typed or strictly typed language.
+
+JavaScript was orginally known as Ecma Script(ES).In 2009 ES5 launched and till the date we are using ES6
+which is introduced in 2015
+
+Why do we need Javascript?
+To create best of web based application or to create the best of backend API servers or to create the bestof SPA's/Hybrid Apps 
+Javascript is the one which smoothly blends into which ever way we want it to.
+
+Is Javascript just a programming language?
+Javascript is now one of the world's most popular language not because it can perform certain actions but because it's now the
+backbone of the most famous frameworks/libraries available to us which makes the constructed software robust than there is barely
+anything left which cannot be done on a browser platform
+
+                Angular,React,Node,React Native,Ionic,vue,Next JS,Nest JS,Electron Js,jQuery,Moment JS etc are most famous and
+widely used frameworks which we have in todays technological world.
+
+
+How to run Javascript?
+Method-1 : open browser ---> Right click ---> Click inspect ---> Navigate to console ---> type code and enter to get output/result.
+
+Method-2 (Javascript Engine) : Javascript runs on v8 Engine in google chrome.It's single threaded and to totally understand typescript
+                               you should know proper working of Javascript.It uses .js extension and in html file <script> tag is used
+                               to connect js file with html for browser.
+
+Method-3 (JavaScript file) : create saperate file with extension js and link it to html page inside <script src="---"></script>
+
+
+OUTPUT/PRINT STATEMENTS
+-----------------------
 The console.log() is a function in JavaScript that is used to print any kind of variables defined before it or to print any message that
 needs to be displayed to the console.
 
