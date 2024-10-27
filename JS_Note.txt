@@ -56,6 +56,15 @@ Return value: It outputs the value of the given parameter to the console.
 Eg: console.log("Hello, Adithya");
     console.log(3+5);
 
+
+console.warn('Message'); - Similar to console.log(), console.warn() is used to log messages to the console. However, it is often used for
+                           logging warning messages. Warning messages indicate potential issues or non-critical problems in your code.
+                           They are typically displayed in yellow or with a warning icon in the console, making them stand out.
+
+console.error('Message'); - console.error() is used for logging error messages to the console. Error messages indicate critical issues
+                            or errors in your code that need attention. They are usually displayed in red or with an error icon, making
+                            them highly visible. Developers often use this for debugging and identifying and fixing errors in their code.
+
 VARIABLES
 ---------
 A variable is a named placeholder that holds data or information. In simpler terms, variables are used to store values that can be used
@@ -211,6 +220,8 @@ console.log(a+b); - This will return NaN because compiler put variable b as unde
 We can resolve this using falsy value 0 like:
 console.log(a+(b||0)) - Here the last falsy value will be executed.
 
+
+
 Automatic Type conversion using Operators 
 -----------------------------------------
 JavaScript automatically handles type conversion in many cases. Let's see how it behaves when using different types.
@@ -331,6 +342,16 @@ comes in handy.
 Note: A non numeric string (like "John") converts to NaN (Not a Number).
 
 2) to sting : String()/var_name.toString();
+
+How to convert string to numeric using +
+----------------------------------------
+var contact = "8839289289";
+console.log(typeof contact); // Output: string
+
+var convertedContact = +contact;
+console.log(typeof convertedContact); //Output: number
+
+
 3) to boolean : Boolean();
 
 Conversion Rules in boolean conversion:
@@ -715,7 +736,55 @@ What is Pure Function?
 
 
 
+Dates in Javascript
+-------------------
+Syntax: new Date()
 
+Example: New Date(year,month,day,hour,minute,seconds,ms);
+
+New Date().getTime()
+New Date().getMonth() / New Date().getFullYear()/ new Date().toISOString() and much more
+
+
+Date Methods
+------------
+1) currentDt.getTime()
+2) currentDt.getDay() - 0 : sunday, 1 : monday, 2: tuesday, 3: wednesday, 4: thursday, 5: friday, 6: saturday 
+3) currentDt.getMonth()
+4) currentDt.getFullYear()
+5) currentDt.toDateString()
+6) currentDt.toLocaleString()
+ etc..
+
+
+How to Convert Numbers to Date
+------------------------------
+var someDateTime = 166853609200;
+var convertedDateTime = new Date(166853609200);
+console.log(convertedDateTime);
+console.log(convertedDateTime).getDate();
+
+
+Math Library
+------------
+There are some predefined math function which we can use directly.
+
+math.PI // 3.14
+math.E // Euler's Number
+math.SQRT2 // ^2 
+math.SQRT1_2 // ^1/2
+math.round(2.6) // 3
+math.LN2 // Natural Logarithm of 2
+math.ceil(4.4) // 5
+math.floor(4.4) // 4
+math.trunc(4.4) // 4
+math.pow(8,2) // 64
+math.sqrt(64) // 8
+
+setInterval(()=>{
+    console.log(math.random())
+}, 1000);
+//This will print random numbers 1000 times.
 
 
 
@@ -767,6 +836,7 @@ A String object can always be converted to its primitive counterpart with the va
 
 Note: All string methods return a new string. They don't modify the original string. Strings are immutable: Strings cannot be changed,
       only replaced.
+
 
 String Iterations
 -----------------
